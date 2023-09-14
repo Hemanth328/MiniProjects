@@ -1,4 +1,4 @@
-package com.repo.service;
+package com.irg.service;
 
 import java.util.List;
 
