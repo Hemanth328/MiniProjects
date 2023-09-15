@@ -9,10 +9,10 @@ import com.irg.dao.CitizenPlans;
 
 public interface CitizenPlanRepo extends JpaRepository<CitizenPlans, Integer> {
 	
-	@Query("select distinct(planName) from citizenPlans")
+	@Query("select distinct(planName) from CitizenPlans")
 	public List<String> getPlanNames();
 	
-	@Query("selecr distinct(planStatus) from citizenPlans")
+	@Query("select distinct(planStatus) from CitizenPlans")
 	public List<String> getPlanStaus();
 	
 }
