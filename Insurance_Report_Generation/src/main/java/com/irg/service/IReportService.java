@@ -5,6 +5,8 @@ import java.util.List;
 import com.irg.dao.CitizenPlans;
 import com.irg.request.SearchRequest;
 
+import jakarta.servlet.http.HttpServletResponse;
+
 public interface IReportService { 
 	
 	public List<String> getPlanNames();
@@ -13,8 +15,8 @@ public interface IReportService {
 	
 	public List<CitizenPlans> search(SearchRequest request);
 	
-	public boolean exportExcel();
+	public boolean exportExcel(HttpServletResponse response) throws Exception;
 	
-	public boolean exportPdf();
+	public boolean exportPdf(HttpServletResponse response) throws Exception;
 
 }

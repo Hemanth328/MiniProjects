@@ -2,6 +2,8 @@ package com.irg.dao;
 
 import java.time.LocalDate;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -27,8 +29,10 @@ public class CitizenPlans {
 	
 	private String planStatus;
 	
+	@DateTimeFormat(pattern = "dd-MM-yyyy")
 	private LocalDate planStartDate;
 	
+	@DateTimeFormat(pattern = "dd-MM-yyyy")
 	private LocalDate planEndDate;
 	
 	private Double benefitAmount;

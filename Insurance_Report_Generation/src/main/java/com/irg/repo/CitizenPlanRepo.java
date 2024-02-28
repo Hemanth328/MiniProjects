@@ -13,6 +13,6 @@ public interface CitizenPlanRepo extends JpaRepository<CitizenPlans, Integer> {
 	public List<String> getPlanNames();
 	
 	@Query("select distinct(planStatus) from CitizenPlans")
-	public List<String> getPlanStaus();
+	public List<String> getPlanStatus();
 	
 }
