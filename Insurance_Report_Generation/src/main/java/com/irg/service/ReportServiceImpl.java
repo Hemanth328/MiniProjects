@@ -129,7 +129,7 @@ public class ReportServiceImpl implements IReportService{
 
 		String subject = "Testing Mail Sending Application";
 		String body = "<h1>Hey you have a Pdf attachment !<br> Check your attachment....!</h1>";
-		String to = "sirip93@gmail.com";
+		String to = "reddy.hemanthkumar99@gmail.com";
 		
 		mailsender.sendmail(subject, body, to, file);
 		
